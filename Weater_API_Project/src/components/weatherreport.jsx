@@ -55,7 +55,7 @@ function WeatherReport({ weather, forecast }) {
         </div>
       </div>
 
-      {/* Weather Details */}
+      {/* Weather Detail */}
       <div className={`row ${styles.forecast}`}>
         <div className={styles["forecast-cards"]}>
           <div className={styles["forecast-card"]}>
