@@ -39,5 +39,8 @@
   display: flex;
   justify-content: center;
 }
-
-
+.sun-logo {
+  width: 32px;   /* adjust as needed */
+  height: 32px;
+  object-fit: contain;
+}
