@@ -1,6 +1,6 @@
 import styles from "./weatherreport.module.css";
 
-// Import weather icons
+
 import sunIcon from "../assets/icon-sunny.png";
 import cloudyIcon from "../assets/icon-partly-cloudy.webp";
 import overcastIcon from "../assets/icon-overcast.webp";
@@ -9,7 +9,7 @@ import drizzleIcon from "../assets/icon-drizzle.png";
 import snowIcon from "../assets/icon-snow.webp";
 import stormIcon from "../assets/icon-storm.jpg";
 
-// Static background for current weather
+
 import bgToday from "../assets/bg-today-large.svg";
 
 function WeatherReport({ weather, forecast }) {
@@ -17,7 +17,7 @@ function WeatherReport({ weather, forecast }) {
     return <p>Loading weather data...</p>;
   }
 
-  // Decide icon based on temperature
+
   const getWeatherIcon = (temp) => {
     if (temp >= 30) return sunIcon;
     if (temp >= 25) return cloudyIcon;
@@ -28,7 +28,7 @@ function WeatherReport({ weather, forecast }) {
     return stormIcon;
   };
 
-  // Helper to get short weekday name
+
   const getWeekday = (dateStr) => {
     const date = new Date(dateStr);
     return date.toLocaleDateString("en-US", { weekday: "short" });
@@ -55,6 +55,10 @@ function WeatherReport({ weather, forecast }) {
         </div>
       </div>
 
+
+
+      
+
       {/* Weather Detail */}
       <div className={`row ${styles.forecast}`}>
         <div className={styles["forecast-cards"]}>
@@ -72,6 +76,10 @@ function WeatherReport({ weather, forecast }) {
           </div>
         </div>
       </div>
+
+
+
+
 
       {/* Daily Forecast */}
       <div className={`row ${styles.forecast}`}>

@@ -10,7 +10,7 @@ import "./App.css";
 import SearchBox from "./components/searchbox";
 import ContentContainer from "./components/contentcontainer";
 
-// Import your sun icon for header
+
 import sunLogo from "./assets/icon-sunny.png";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     if (!city) return alert("Please enter a city");
 
     try {
-      // Geocoding API to get latitude & longitude
+     // getting the geo location coordinates
       const geoRes = await fetch(
         `https://geocoding-api.open-meteo.com/v1/search?name=${city}`
       );
@@ -45,10 +45,10 @@ function App() {
         city: `${name}, ${country}`,
         temp: weatherData.current_weather.temperature,
         wind: weatherData.current_weather.windspeed,
-        // Add other fields if needed: humidity, precipitation, etc.
+       
       });
 
-      // Set forecast with daily and hourly
+     
       setForecast({
         daily: weatherData.daily,
         hourly: weatherData.hourly,
@@ -61,7 +61,8 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Top Navbar */}
+     
+     {/* hero section  */}
       <header className="app-header d-flex justify-content-between align-items-center">
         <div className="logo d-flex align-items-center">
           <img src={sunLogo} alt="Sun Logo" className="sun-logo" />

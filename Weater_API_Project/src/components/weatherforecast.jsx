@@ -1,6 +1,6 @@
 import styles from "./WeatherForecast.module.css";
 
-// Import your weather icons
+
 import sunIcon from "../assets/icon-sunny.png";
 import partlyCloudyIcon from "../assets/icon-partly-cloudy.webp";
 import cloudyIcon from "../assets/icon-overcast.webp";
