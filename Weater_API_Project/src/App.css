@@ -1,0 +1,43 @@
+
+
+.app-container {
+  background-color: #0b0f2b; /* dark background */
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.app-header {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.sun-icon {
+  margin-right: 0.5rem;
+}
+
+/* Title */
+.app-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Search */
+.search-wrapper {
+  margin-bottom: 2rem;
+}
+
+/* Content alignment */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
